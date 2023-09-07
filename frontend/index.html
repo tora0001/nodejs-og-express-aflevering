@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bunden Forudsætning 1</title>
+    <title>CRUDify</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>National Geographix</h1>
+      <h1>CRUDify</h1>
     </header>
     <div class="create-btn">
-      <button class="create">Create new animal</button>
+      <button class="create">Add new artist</button>
     </div>
     <section class="tools-grid">
       
@@ -19,30 +19,26 @@
           Sort by:
           <select id="select-sort-by">
             <option value="" selected>Not selected</option>
-            <option value="title">Name</option>
-            <option value="body">Description</option>
-            <option value="food">Favorite Food</option>
+            <option value="name">Name</option>
+            <option value="Genre">Genre</option>
           </select>
         </label>
       
       
         <label for="input-search">Search:</label>
-        <input type="search" id="input-search" placeholder="Search animal" />
+        <input type="search" id="input-search" placeholder="Search artist" />
 
-        <label for="filter">Filter:</label>
+        <label for="filter">Genre:</label>
         <select id="filter">
           <option value="" selected>All</option>
-          <option value="land">Land</option>
-          <option value="water">Water</option>
-          <option value="flying">Flying</option>
+          <option value="hiphop">Hip-hop</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
         </select>
       
     </section>
-    <section id="posts" class="grid-container"></section>
-    <section id="posts" class="grid-container"></section>
-    <dialog id="postDetails"></dialog>
-    <dialog id="create-form"></dialog>
-    <dialog id="update-form"></dialog>
+    <section id="artists" class="grid-container"></section>
+    <section id="artists" class="grid-container"></section>
   </body>
   <script src="app.js" type="module"></script>
 </html>
