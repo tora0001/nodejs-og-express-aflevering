@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "favorite": false,
     "name": "STAX",
     "birthdate": "23/9-1996",
     "activeSince": "2010",

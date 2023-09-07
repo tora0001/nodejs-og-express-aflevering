@@ -40,6 +40,7 @@ app.put("/artists/:id", async (req, res) => {
 
   let artistToUpdate = artists.find((artist) => artist.id === id);
   const body = req.body;
+  artistToUpdate.favorite = body.favorite;
   artistToUpdate.name = body.name;
   artistToUpdate.birthdate = body.birthdate;
   artistToUpdate.activeSince = body.activeSince;
